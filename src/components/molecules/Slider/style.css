@@ -1,0 +1,62 @@
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: var(--black);
+  cursor: pointer;
+  outline: none;
+}
+
+.arrow--left {
+  left: 20px;
+}
+
+.arrow--right {
+  left: auto;
+  right: 20px;
+}
+
+.arrow--disabled {
+  fill: var(--black);
+}
+
+.navigation-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: 1px solid #faa500;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #faa500;
+}
+
+.keen-slider {
+  transition: height 0.3s;
+}
+
+.keen-slider .keen-slider__slide {
+  min-height: auto !important;
+}
